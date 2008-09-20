@@ -15,7 +15,7 @@ numconv
    <http://code.google.com/p/numconv/source/browse/trunk/docs/html/index.html>`_
 :examples:
    `numconv-tests
-   <http://code.google.com/p/numconv/source/browse/trunk/tests.py>`_
+   <http://numconv.googlecode.com/svn/docs/index.html>`_
 
 
 :mod:`numconv` converts a string into a number and a number into a string using
