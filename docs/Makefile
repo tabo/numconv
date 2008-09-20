@@ -5,6 +5,7 @@
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
+HTMLDIR       = html
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -23,13 +24,13 @@ help:
 	@echo "  linkcheck to check all external links for integrity"
 
 clean:
-	-rm -rf _build html
+	-rm -rf _build $(HTMLDIR)/*
 
 html:
-	mkdir -p html _build/doctrees
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) html
+	mkdir -p $(HTMLDIR) _build/doctrees
+	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(HTMLDIR)
 	@echo
-	@echo "Build finished. The HTML pages are in ./html/."
+	@echo "Build finished. The HTML pages are in $(HTMLDIR)"
 
 pickle:
 	mkdir -p _build/pickle _build/doctrees
