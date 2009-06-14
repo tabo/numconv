@@ -74,8 +74,12 @@ class BaseconvS2i(unittest.TestCase):
         self.assertRaises(ValueError, numconv.str2int, 'abcd', -10)
 
 
-class BaseconvGetcmap(unittest.TestCase):
+class BaseconvCmap(unittest.TestCase):
     """tests for getcmap()"""
+
+    def setUp(self):
+        # clear the cmaps cache before every test
+        numconv.CMAPS = {}
 
     def test_getcmap(self):
         """testing getcmap: expected values"""
@@ -88,6 +92,18 @@ class BaseconvGetcmap(unittest.TestCase):
     def test_getcmap_dupechars(self):
         """testing getcmap: error on alphabet with duplicate chars"""
         self.assertRaises(ValueError, numconv.getcmap, 'abcdaf')
+
+    def test_cmap_int2str(self):
+        """tests that a call to int2str loads the cmap correctly"""
+        numconv.int2str(10, 4, 'abcd')
+        self.assertEqual(numconv.CMAPS['abcd'],
+            {'a': 0, 'b': 1, 'c': 2, 'd': 3})
+
+    def test_cmap_str2int(self):
+        """tests that a call to str2int loads the cmap correctly"""
+        numconv.str2int('aaaa', 4, 'abcd')
+        self.assertEqual(numconv.CMAPS['abcd'],
+            {'a': 0, 'b': 1, 'c': 2, 'd': 3})
 
 
 class BaseconvSanity(unittest.TestCase):
