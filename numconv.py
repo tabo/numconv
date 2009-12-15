@@ -9,7 +9,7 @@ numconv
 :copyright: 2008-2009 by Gustavo Picon
 :license: Apache License 2.0
 :version: 2.0
-:url: http://code.google.com/p/numconv/
+:url: http://code.tabo.pe/numconv/
 :documentation:
    `numconv-docs
    <http://docs.tabo.pe/numconv/2.0/>`_
