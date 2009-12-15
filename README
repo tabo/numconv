@@ -1,0 +1,7 @@
+numconv
+=======
+
+Python library to convert strings to numbers and numbers to strings.
+
+numconv converts a string into a number and a number into a string using
+default or user supplied encoding alphabets.
