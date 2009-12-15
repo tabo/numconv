@@ -24,10 +24,11 @@ help:
 	@echo "  linkcheck to check all external links for integrity"
 
 clean:
-	-rm -rf _build $(HTMLDIR)/*
+#	-rm -rf _build $(HTMLDIR)/*
+	-rm -rf _build _sources _static *.html *.js .buildinfo *.inv *.orig
 
 html:
-	mkdir -p $(HTMLDIR) _build/doctrees
+	mkdir -p $(HTMLDIR) _build/doctrees _static
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(HTMLDIR)
 	@echo
 	@echo "Build finished. The HTML pages are in $(HTMLDIR)"
