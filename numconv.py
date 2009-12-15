@@ -8,7 +8,7 @@ numconv
            strings.
 :copyright: 2008 by Gustavo Picon
 :license: Apache License 2.0
-:version: 1.2.0
+:version: 2.0
 :url: http://code.google.com/p/numconv/
 :documentation:
    `numconv-docs
@@ -46,7 +46,7 @@ constants
 """
 
 
-__version__ = '1.2.0'
+__version__ = '2.0.0'
 
 # from april fool's rfc 1924
 BASE85 = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' \
