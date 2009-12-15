@@ -166,7 +166,7 @@ class NumConv(object):
     
            Binary '100101101010100' to integer::
     
-               >> NumConv(2).numconv.str2int('100101101010100')
+               >> NumConv(2).str2int('100101101010100')
                19284
     
            Base 4 with custom encoding 'foo' to integer::
