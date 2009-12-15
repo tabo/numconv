@@ -39,6 +39,10 @@ constants
    Alphabets defined in :rfc:`4648`. Not really for common numeric conversion
    use.
 
+.. data:: BASE62
+
+   Useful for URL shorteners.
+
 """
 
 
@@ -54,6 +58,9 @@ BASE32 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567'
 BASE32HEX = BASE85[:32]
 BASE64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 BASE64URL = BASE64[:62] + '-_'
+
+# http://en.wikipedia.org/wiki/Base_62 useful for url shorteners
+BASE62 = BASE85[:62]
 
 # cached maps
 CMAPS = {}
