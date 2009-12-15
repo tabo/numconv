@@ -3,6 +3,13 @@
 
 .. automodule:: numconv
 
+   .. autoclass:: NumConv
+      :show-inheritance:
+
+      .. automethod:: int2str
+      .. automethod:: str2int
+
+
    functions
    ~~~~~~~~~
    
