@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import os
 from distutils.core import setup
 
 version = '2.0'
@@ -13,6 +14,9 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
 ]
 
+root_dir = os.path.dirname(__file__)
+long_desc = open(root_dir if root_dir else '.'+'/README').read()
+
 setup(
     name='numconv',
     version=version,
@@ -24,5 +28,5 @@ setup(
     description='Python library to convert strings to numbers '
                 'and numbers to strings.',
     classifiers=classifiers,
-    #long_description=__doc__,
+    long_description=long_desc,
 )
