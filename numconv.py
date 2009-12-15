@@ -12,10 +12,10 @@ numconv
 :url: http://code.google.com/p/numconv/
 :documentation:
    `numconv-docs
-   <http://numconv.googlecode.com/svn/docs/index.html>`_
+   <http://docs.tabo.pe/numconv/2.0/>`_
 :examples:
    `numconv-tests
-   <http://code.google.com/p/numconv/source/browse/trunk/tests.py>`_
+   <http://code.tabo.pe/numconv/src/2.0/tests.py>`_
 
 
 :mod:`numconv` converts a string into a number and a number into a string

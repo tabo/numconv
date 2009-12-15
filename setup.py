@@ -16,9 +16,9 @@ classifiers = [
 setup(
     name='numconv',
     version=version,
-    url='http://code.google.com/p/numconv/',
+    url='http://code.tabo.pe/numconv/',
     author='Gustavo Picon',
-    author_email='tabo@gpicon.org',
+    author_email='tabo@tabo.pe',
     license='Apache License 2.0',
     py_modules=['numconv'],
     description='Python library to convert strings to numbers '
