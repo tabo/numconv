@@ -15,7 +15,7 @@ classifiers = [
 ]
 
 root_dir = os.path.dirname(__file__)
-long_desc = open(root_dir if root_dir else '.'+'/README').read()
+long_desc = open((root_dir if root_dir else '.')+'/README').read()
 
 setup(
     name='numconv',
