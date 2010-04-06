@@ -97,7 +97,7 @@ class BaseconvSanity(unittest.TestCase):
         """sanity check: testing a large interval and lots of radixes"""
         for radix in range(2, len(BASE85)):
             ncobj = NumConv(radix)
-            for num in range(1000) + [10**x for x in range(5, 15)]:
+            for num in range(1000) + [10 ** x for x in range(5, 15)]:
                 self.assertEqual(num, ncobj.str2int(ncobj.int2str(num)))
 
 if __name__ == "__main__":

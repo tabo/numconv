@@ -1,6 +1,6 @@
 # Sphinx inventory version 1
 # Project: numconv
-# Version: 2.0
+# Version: 2.1a
 numconv mod index.html
 numconv.int2str function index.html
 numconv.BASE85 data index.html

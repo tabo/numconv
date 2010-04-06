@@ -3,7 +3,7 @@
 import os
 from distutils.core import setup
 
-version = '2.0'
+version = '2.1a'
 
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -15,7 +15,7 @@ classifiers = [
 ]
 
 root_dir = os.path.dirname(__file__)
-long_desc = open((root_dir if root_dir else '.')+'/README').read()
+long_desc = open((root_dir if root_dir else '.') + '/README').read()
 
 setup(
     name='numconv',
