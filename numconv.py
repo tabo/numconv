@@ -124,7 +124,7 @@ class NumConv(object):
 
            Very large number to :data:`~numconv.BASE85`::
 
-               >> NumConv(85).int2str(2693233728041137L)
+               >> NumConv(85).int2str(2693233728041137)
                '~123AFz@'
 
         """
@@ -161,7 +161,7 @@ class NumConv(object):
            Hexadecimal 'DEADBEEF' to integer::
 
               >> NumConv(16).str2int('DEADBEEF')
-              3735928559L
+              3735928559
 
            Binary '100101101010100' to integer::
 
@@ -176,7 +176,7 @@ class NumConv(object):
            :data:`~numconv.BASE85` '~123AFz@' to integer::
 
                >> NumConv(85).str2int('~123AFz@')
-               2693233728041137L
+               2693233728041137
 
         """
         radix, alphabet = self.radix, self.alphabet
