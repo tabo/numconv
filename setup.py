@@ -10,12 +10,21 @@ classifiers = [
     "Intended Audience :: Developers",
     "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Python",
+    "Programming Language :: Python :: 2.4",
+    "Programming Language :: Python :: 2.5",
+    "Programming Language :: Python :: 2.6",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.0",
+    "Programming Language :: Python :: 3.1",
     "Operating System :: OS Independent",
     "Topic :: Software Development :: Libraries",
 ]
 
 root_dir = os.path.dirname(__file__)
-long_desc = open((root_dir if root_dir else '.') + '/README').read()
+if not root_dir:
+    root_dir = '.'
+long_desc = open(root_dir + '/README').read()
 
 setup(
     name='numconv',
