@@ -16,7 +16,7 @@ class BaseconvI2s(unittest.TestCase):
         self.assertEqual(int2str(14776335, 62), 'zzzz')
         self.assertEqual(int2str(466, 7), '1234')
         self.assertEqual(int2str(151880, 2), '100101000101001000')
-        self.assertEqual(int2str(2693233728041137L, 85), '~123AFz@')
+        self.assertEqual(int2str(2693233728041137, 85), '~123AFz@')
         self.assertEqual(int2str(543543, 40), '8JSN')
         self.assertEqual(int2str(1949459, 61), '8ZtL')
         self.assertEqual(int2str(19284, 2), '100101101010100')
@@ -46,12 +46,12 @@ class BaseconvS2i(unittest.TestCase):
 
     def test_s2i(self):
         """testing str2int: expected values"""
-        self.assertEqual(str2int('DEADBEEF', 16), 3735928559L)
+        self.assertEqual(str2int('DEADBEEF', 16), 3735928559)
         self.assertEqual(str2int('zzz', 62), 238327)
         self.assertEqual(str2int('zzzz', 62), 14776335)
         self.assertEqual(str2int('1234', 7), 466)
         self.assertEqual(str2int('100101000101001000', 2), 151880)
-        self.assertEqual(str2int('~123AFz@', 85), 2693233728041137L)
+        self.assertEqual(str2int('~123AFz@', 85), 2693233728041137)
         self.assertEqual(str2int('8JSN', 40), 543543)
         self.assertEqual(str2int('8ZtL', 61), 1949459)
         self.assertEqual(str2int('100101101010100', 2), 19284)
@@ -97,7 +97,7 @@ class BaseconvSanity(unittest.TestCase):
         """sanity check: testing a large interval and lots of radixes"""
         for radix in range(2, len(BASE85)):
             ncobj = NumConv(radix)
-            for num in range(1000) + [10 ** x for x in range(5, 15)]:
+            for num in list(range(1000)) + [10 ** x for x in range(5, 15)]:
                 self.assertEqual(num, ncobj.str2int(ncobj.int2str(num)))
 
 if __name__ == "__main__":
