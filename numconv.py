@@ -6,7 +6,7 @@ http://code.tabo.pe/numconv/
 """
 
 
-__version__ = '2.1.0a'
+__version__ = '2.1.0'
 
 # from april fool's rfc 1924
 BASE85 = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' \

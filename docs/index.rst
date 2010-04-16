@@ -2,16 +2,16 @@ numconv
 =======
 
 :synopsys: Convert strings to numbers and numbers to strings.
-:copyright: 2008-2009 by Gustavo Picon
+:copyright: 2008-2010 by Gustavo Picon
 :license: Apache License 2.0
-:version: 2.1a
+:version: 2.1
 :url: http://code.tabo.pe/numconv/
 :documentation:
    `numconv-docs
-   <http://docs.tabo.pe/numconv/2.0/>`_
+   <http://docs.tabo.pe/numconv/2.1/>`_
 :examples:
    `numconv-tests
-   <http://code.tabo.pe/numconv/src/2.0/tests.py>`_
+   <http://code.tabo.pe/numconv/src/2.1/tests.py>`_
 
 :mod:`numconv` converts a string into a number and a number into a string
 using default or user supplied encoding alphabets.
