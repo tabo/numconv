@@ -1,8 +1,11 @@
 numconv
 =======
 
-Python library to convert strings to numbers and numbers to strings.
+numconv is a library that converts strings to numbers and numbers to
+strings using default or user supplied encoding alphabets, written by
+Gustavo Picón and licensed under the Apache License 2.0.
 
-numconv converts a string into a number and a number into a string using
-default or user supplied encoding alphabets.
+You can find the documentation in
+
+    https://tabo.pe/projects/numconv/docs/tip/
 
