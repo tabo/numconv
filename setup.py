@@ -3,7 +3,7 @@
 import os
 from distutils.core import setup
 
-version = '2.1'
+version = '2.1.1'
 
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -29,7 +29,7 @@ long_desc = open(root_dir + '/README').read()
 setup(
     name='numconv',
     version=version,
-    url='http://code.tabo.pe/numconv/',
+    url='https://tabo.pe/projects/numconv/',
     author='Gustavo Picon',
     author_email='tabo@tabo.pe',
     license='Apache License 2.0',
