@@ -1,12 +1,12 @@
 """Convert strings to numbers and numbers to strings.
 
 Gustavo Picon
-http://code.tabo.pe/numconv/
+https://tabo.pe/projects/numconv/
 
 """
 
 
-__version__ = '2.1.0'
+__version__ = '2.1.1'
 
 # from april fool's rfc 1924
 BASE85 = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' \
@@ -106,10 +106,10 @@ class NumConv(object):
 
 
 def int2str(num, radix=10, alphabet=BASE85):
-    "helper for quick base conversions from integers to strings"
+    "helper function for quick base conversions from integers to strings"
     return NumConv(radix, alphabet).int2str(num)
 
 
 def str2int(num, radix=10, alphabet=BASE85):
-    "helper for quick base conversions from strings to integers"
+    "helper function for quick base conversions from strings to integers"
     return NumConv(radix, alphabet).str2int(num)

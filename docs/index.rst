@@ -1,26 +1,45 @@
 numconv
 =======
 
-:synopsys: Convert strings to numbers and numbers to strings.
-:copyright: 2008-2010 by Gustavo Picon
-:license: Apache License 2.0
-:version: 2.1
-:url: http://code.tabo.pe/numconv/
-:documentation:
-   `numconv-docs
-   <http://docs.tabo.pe/numconv/2.1/>`_
-:examples:
-   `numconv-tests
-   <http://code.tabo.pe/numconv/src/2.1/tests.py>`_
+`numconv <https://tabo.pe/projects/numconv/>`_ is a library that converts
+strings to numbers and numbers to strings using default or user supplied
+encoding alphabets, written by `Gustavo Picón <https://tabo.pe>`_ and
+licensed under the Apache License 2.0.
 
-:mod:`numconv` converts a string into a number and a number into a string
-using default or user supplied encoding alphabets.
+Installation
+------------
 
+You have several ways to install ``numconv``. If you're not sure,
+`just use pip <http://guide.python-distribute.org/pip.html>`_
+
+pip (or easy_install)
+~~~~~~~~~~~~~~~~~~~~~
+
+You can install the release versions from
+`numconv's PyPI page`_ using ``pip``::
+
+  pip install numconv
+
+or if for some reason you can't use ``pip``, you can try ``easy_install``::
+
+  easy_install --always-unzip numconv
+
+
+setup.py
+~~~~~~~~
+
+Download a release from the `numconv download page`_ and unpack it, then
+run::
+
+   python setup.py install
+
+
+API
+---
 
 .. module:: numconv
 
 .. autoclass:: NumConv
-   :show-inheritance:
 
    .. automethod:: int2str
 
@@ -91,9 +110,6 @@ using default or user supplied encoding alphabets.
    Useful for URL shorteners.
 
 
-functions
----------
-
 .. autofunction:: int2str
 
 .. autofunction:: str2int
@@ -106,4 +122,11 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+
+
+.. _`numconv's PyPI page`:
+   http://pypi.python.org/pypi/numconv
+.. _`numconv download page`:
+   http://code.tabo.pe/numconv/downloads/
 
