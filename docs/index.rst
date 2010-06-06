@@ -9,6 +9,9 @@ licensed under the Apache License 2.0.
 Installation
 ------------
 
+``numconv`` has been tested in Python 2.4, 2.5, 2.6, 2.7, 3.0 and 3.1. Other
+versions may work but are not supported.
+
 You have several ways to install ``numconv``. If you're not sure,
 `just use pip <http://guide.python-distribute.org/pip.html>`_
 
