@@ -7,4 +7,5 @@ parallel = True
 source =
     ./
     */.tox/*/site-packages/
+    */.jenkins/*/test/
     */__pyclasspath__/
