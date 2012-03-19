@@ -2,8 +2,7 @@ numconv
 =======
 
 numconv is a library that converts strings to numbers and numbers to
-strings using default or user supplied encoding alphabets, written by
-Gustavo Picón and licensed under the Apache License 2.0.
+strings using default or user supplied encoding alphabets.
 
 You can find the documentation in
 
