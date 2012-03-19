@@ -7,5 +7,10 @@ parallel = True
 source =
     ./
     */.tox/*/site-packages/
-    */.jenkins/*/test/
+    */.jenkins/*/workspace/
     */__pyclasspath__/
+
+[report]
+omit =
+    */test/*
+precision = 2
