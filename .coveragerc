@@ -1,0 +1,10 @@
+[run]
+branch = True
+source = numconv
+parallel = True
+
+[paths]
+source =
+    ./
+    */.tox/*/site-packages/
+    */__pyclasspath__/

@@ -1,3 +1,2 @@
-include LICENSE NOTICE README
-recursive-include docs *
-
+include LICENSE NOTICE README MANIFEST.in tox.ini .coveragerc *.py
+recursive-include docs Makefile *.py *.rst
