@@ -6,7 +6,8 @@ parallel = True
 [paths]
 source =
     ./
-    */TOXENV/*/os/osx/
+    */TOX_PYTHON/*/os/linux/
+    */tox_python/*/os/windows/
     */jenkins/workspace/numconv/
     */.tox/*/site-packages/
     */.jenkins/*/workspace/
