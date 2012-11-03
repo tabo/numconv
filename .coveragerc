@@ -6,6 +6,8 @@ parallel = True
 [paths]
 source =
     ./
+    */TOXENV/*/os/osx/
+    */jenkins/workspace/numconv/
     */.tox/*/site-packages/
     */.jenkins/*/workspace/
     */__pyclasspath__/
