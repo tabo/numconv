@@ -14,6 +14,9 @@ coverage report
 coverage xml
 coverage erase
 
+# Remove the artifacts directories before getting the files list.
+rm -rf $WORKSPACE/TOX_PYTHON*os*
+
 SRCFILES=numconv.py
 PYFILES="*.py test/*.py"
 ALLFILES="* test/*"
