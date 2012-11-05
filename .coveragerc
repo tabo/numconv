@@ -6,12 +6,9 @@ parallel = True
 [paths]
 source =
     ./
-    */TOX_PYTHON/*/os/linux/
-    */tox_python/*/os/windows/
-    */jenkins/workspace/numconv/
-    */.tox/*/site-packages/
-    */.jenkins/*/workspace/
-    */__pyclasspath__/
+    *\workspace\numconv\tox_python\*\os\windows\
+    */jobs/numconv/workspace/
+    */workspace/numconv/
 
 [report]
 omit =
