@@ -5,10 +5,10 @@ parallel = True
 
 [paths]
 source =
-    ./
-    *\workspace\numconv\tox_python\*\os\windows\
-    */jobs/numconv/workspace/
-    */workspace/numconv/
+  ./
+  *\workspace\numconv\tox_python\*\os\windows\
+  */jobs/numconv/workspace/TOX_PYTHON/*/os/osx/
+  */workspace/numconv/TOX_PYTHON/*/os/linux/
 
 [report]
 omit =
